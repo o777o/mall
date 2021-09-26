@@ -1,0 +1,139 @@
+{
+  result: {
+    itemInfo: {
+      'topImages|2-8': ["@image('320x480','@color','detailClothes')"], // 得到随机轮播图片
+      title: "@csentence(30)", // 得到随机的图片题目
+      price: '￥@float(38, 100, 2, 2)', // 得到随机的价格
+      oldPrice: '￥@float(101, 155, 2, 2)', // 得到随机的价格
+      discountDesc: "@DISCOUNTDESC", // 得到随机的优惠
+      desc: "@csentence(30)" // 得到随机的描述
+    },
+    columns: ["销量 @natural(1000, 1580)", "收藏@natural(33, 103)人", "默认快递"], // 得到随机的销量与收藏
+    shopInfo: {
+      'services|1': [
+        [
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "退货补运费"
+        	},
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "全国包邮"
+        	},
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "7天无理由退货"
+        	},
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "72小时发货"
+        	}
+        ],
+        [
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "退货补运费"
+        	},
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "全国包邮"
+        	},
+        	{
+        		icon: "http://s11.mogucdn.com/p1/160607/upload_ie4tkmbtgqztomjqhezdambqgqyde_44x44.png",
+        		name: "72小时发货"
+        	}
+        ]
+      ], // 得到随机的服务
+      shopLogo: "@image('300x300', '#FFFFFF', '@SHOPINFO')", // 得到随机的店铺logo
+      name: "@SHOPINFO", // 得到随机的店铺名
+      'cSells|50000-60000': 1, // 得到随机的销量
+      'cGoods|100-200': 1, // 得到随机的宝贝数量
+      score: [
+        {
+          'isBetter|1': true,
+           name: "描述相符",
+           'score|4-6.2': 1
+        },
+        {
+          'isBetter|1': true,
+           name: "价格合理",
+           'score|4-6.2': 1
+        },        {
+          'isBetter|1': true,
+           name: "质量满意",
+           'score|4-6.2': 1
+        },
+      ]
+    },
+    detailInfo: {
+      desc: "@GOODSDESC", // 得到随机的描述
+      detailImage: [{
+        key: '穿着效果',
+        'list|2-12': ["@image('320x480','@color','descClothes')"]
+      }]
+    },
+    itemParams: {
+      info: {
+        'set|1': [
+          [
+            {key: '图案', value: '宫廷复古图/民族复古图,字母/文字/数字'},
+            {key: '厂名', value: '艾玫莉服饰有限公司'},
+            {key: '颜色', value: '黑白拼接'},
+            {key: '袖型', value: '常规袖'},
+            {key: '上衣厚度', value: '适中'},
+            {key: '尺码', value: 'XL,L,M,XXL'},
+            {key: '衣长', value: '常规款（51-65cm）'},
+            {key: '版型', value: '宽松'},
+            {key: '季节', value: '广东省揭阳市普宁市'},
+            {key: '厂址', value: '棉'},
+            {key: '材质', value: '圆领'},
+            {key: '领型', value: '面料拼接,平绣'},
+            {key: '元素', value: '长袖'},
+            {key: '袖长', value: '原宿'},
+            {key: '风格', value: '韩系'},
+            {key: '潮流', value: '宫廷复古图/民族复古图,字母/文字/数字'}
+          ],
+          [
+            {key: '图案', value: '字母/文字/数字'},
+            {key: '厂名', value: '广州恩图贸易有限公司'},
+            {key: '季节', value: '夏季'},
+            {key: '颜色', value: '7124白色,7154黑色,7192白色,7099白色,7257黑色,7174白色,7133白色,7253黑色,7195白色,7161白色'},
+            {key: '厂址', value: '广州市番禺区南村镇江南工业二区二楼路二号107房'},
+            {key: '材质', value: '棉'},
+            {key: '领型', value: '圆领'},
+            {key: '袖长', value: '短袖'},
+            {key: '风格', value: '小清新'},
+            {key: '尺码', value: 'XL,L,M'},
+            {key: '衣长', value: '短款（41-50cm）'},
+            {key: '版型', value: '宽松'}
+          ]
+        ] // 得到随机的参数
+      },
+      rule: {
+        tables: [
+          [
+            ['尺码','M','L','XL','XXL'],
+            ['衣长','61.5','63','64.5','68'],
+            ['胸围','98','104','110','116'],
+            ['袖长','63','66','68.5','70.5']
+          ]
+        ] // 得到随机的参数
+      }
+    },
+    rate: {
+      'cRate|0-125': 1,
+      list: [
+        {
+          content: "@csentence(14, 44)", // 得到随机的评价内容
+          created: "@natural(1535694719, 1612707794)", // 得到随机的时间戳
+          user: {
+            avatar: "@image(140x141)", // 得到随机的用户头像
+            uname: "@csentence(3, 5)" // 得到随机的用户名
+          },
+          'style|1': ["颜色:白（5866）尺码:M", "颜色:上衣+裤子 尺码:M"],
+          'images|1-4': ["@image('400x299', '@color', 'comment')"]
+        }
+      ]
+    }
+  }
+}
